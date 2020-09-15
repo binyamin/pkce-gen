@@ -2,13 +2,19 @@ const crypto = require("crypto");
 
 // Credits for crypto logic: <https://www.loginradius.com/engineering/blog/pkce/>
 
-function create(hasState) {
+/**
+ * Creates a code verifier & code challenge
+ * @param {object} [options={}]
+ * @param {boolean} [options.hasState=false] - Also return random string for state (default: false)
+ * @returns {{code_challenge: string, code_verifier: string, state?: string}}
+ */
+function create(options={}) {
     const obj = {};
 
     obj.code_verifier = randomString();
     obj.code_challenge = base64URLEncode(sha256(obj.code_verifier));
 
-    if(hasState === true) {
+    if(options.hasState === true) {
         obj.state = randomString()
     }
 
