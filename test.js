@@ -9,7 +9,7 @@ assert(a.code_challenge, "Should return code challenge");
 assert(a.state === undefined, "By default, should not return state");
 
 // State enabled
-const b = lib.create(true);
+const b = lib.create({hasState: true});
 assert(b.state, "When hasState is true, should return state");
 
 // Compare return values
