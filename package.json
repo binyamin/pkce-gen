@@ -1,0 +1,27 @@
+{
+  "name": "pkce-gen",
+  "version": "1.0.0",
+  "description": "Generate code challenge & code verifier for PKCE (zero-dependencies)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "pkce",
+    "crypto",
+    "oauth"
+  ],
+  "author": "Binyamin Aron Green (https://binyam.in/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binyamin/pkce-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/binyamin/pkce-gen/issues"
+  },
+  "homepage": "https://github.com/binyamin/pkce-gen#readme"
+}
