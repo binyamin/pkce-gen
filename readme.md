@@ -1,5 +1,7 @@
 # PKCE Generator
 [![npm bundle size](https://img.shields.io/bundlephobia/min/pkce-gen)](https://npmjs.com/package/pkce-gen)
+[![CI](https://github.com/binyamin/pkce-gen/workflows/Test/badge.svg)](https://github.com/binyamin/pkce-gen/actions)
+
 > Generate code challenge & code verifier for PKCE (zero-dependencies)
 
 **Note**: If you want something, just open an issue.
