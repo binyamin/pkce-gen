@@ -2,11 +2,6 @@ const crypto = require("crypto");
 
 // Credits for crypto logic: <https://www.loginradius.com/engineering/blog/pkce/>
 
-/**
- * Creates a code verifier & code challenge
- * @param {boolean} [hasState=false] - also return random string for state
- * @returns {{code_verifier: string, code_challenge: string, state?: string}}
- */
 function create(hasState) {
     const obj = {};
 

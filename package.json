@@ -4,10 +4,12 @@
   "description": "Generate code challenge & code verifier for PKCE (zero-dependencies)",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "types": "npx typescript index.js --declaration --allowJs --emitDeclarationOnly"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [
     "pkce",
