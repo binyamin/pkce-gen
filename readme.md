@@ -13,12 +13,12 @@ npm install --save pkce-gen
 
 ## Usage
 ```js
-const {create} = require("pkce-gen");
+const pkce = require("pkce-gen");
 
-create();
+pkce.create();
 // => {code_verifier, code_challenge}
 
-create(true)
+pkce.create({ hasState: true })
 // => {...state}
 ```
 
