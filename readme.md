@@ -22,6 +22,10 @@ pkce.create({ hasState: true })
 // => {...state}
 ```
 
+## Related
+- [bukalapak/pkce-npm](https://github.com/bukalapak/pkce-npm) - Same goal as here, and a bit bulkier, but (ostensibly) works in the browser as well.
+- [aaronpk/pkce-vanilla-js](https://github.com/aaronpk/pkce-vanilla-js) - Aaron Parecki's demo for doing this in the browser.
+
 ## License
 MIT ©️ [Binyamin Green](https://binyam.in)
 
